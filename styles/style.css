@@ -1,19 +1,34 @@
-body{
+*{
+    font-family: 'Open Sans','Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-color: #232B52FE;
     box-sizing: border-box;
 }
 
+body{
+    background-color: #232B52FE;
+}
+
 #header{
-    margin: 15px auto 15px auto;
-    border: 3px solid #ecf0f1;
-    width: 90vw;
-    align-items: center;
-    display:flex;
+    display: flex;
+    margin: 15px 10px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    width: 90;
     justify-content:space-evenly;
-    padding: 5px 0px 6px 0px;
-    border-radius: 10px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+#header-identification{
+    margin-left: 4rem;
+    display:flex;
+    flex:1;
+}
+
+#header-identification-text{
+    margin-left: 1rem;
 }
 
 #logo{
@@ -22,86 +37,67 @@ body{
 
 .textoLogo{
     color: #ecf0f1;
-    font-family: 'Open Sans','Times New Roman', Times, serif;
-    font-size: 30px;
 }
 
-.cidade{
-    text-align: center;
-}
-
-#painelAviso{
-    display: block;
-    margin: 15px auto 15px auto;
-    font-size: 28px;
-    font-family: 'Open Sans','Times New Roman', Times, serif;
-    color: #ecf0f1;
-    text-align: center;
-}
-
-#mainContainer{
-    margin: 15px auto 15px auto;
-    padding: 0;
-    border: 3px solid #ecf0f1;
-    width: 90vw;
-    height: 100vh;
-    border-radius: 10px;
-    overflow-y: scroll;
-}
-
-#programacaoSemana{
-    list-style-type: none;
-
-}
-
-ol{
-    padding: 0;
-    margin: 0;
-}
-
-.programacaoDia{
-    display: flex;
-    padding: 0px 20px 0px 30px;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    margin: 12px auto 7px auto;
-    border: 3px solid #ecf0f1;
-    border-radius: 10px;
-    background-color: #bdc3c7;
-    width: 95%;
-    height: 120px;
-}
-
-.textoProgramacao{
-    text-align: start;
-    font-family: 'Open Sans','Times New Roman', Times, serif;
+.sigla{
+    font-size: 40px;
+    letter-spacing: 0.35rem;
     font-weight: 600;
 }
 
-.diaSemana{
-    color: #2c3e50;
-    font-size: 25px;
+.cidade{
+    text-align: left;
+    font-size: 23px;
+    font-weight: 300;
 }
 
-.tipoCulto{
-    font-size: 17px;
+#header-nav-buttons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 80px;
+    
+
 }
 
-.iconeCalendario{
-    width: 100px;
+.button{
+    border-radius: 20px;
+    display: flex;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #232B52FE;
+    width: 115px;
+    height: 50px;
+    font-weight: 00;
 }
 
-li:hover{
-    cursor: pointer;
+.hover{
+    background-color: #ecf0f1;
+    transition: all 0.35s ease;
+    transition-delay: 50ms;
 }
 
-::-webkit-scrollbar{
-    width: 10px;
+#home{
+    color: #232B52FE;
 }
 
-::-webkit-scrollbar-thumb{
-    background: #ecf0f1;
-    border: black solid 2px;
-    border-radius: 6px;
+
+#gallery{
+    margin-left: 10px;
+    color: #ecf0f1;
 }
+
+#about{
+    color: #ecf0f1;
+    margin-left: 10px;
+}
+
+hr {
+    margin: auto;
+    height: 0.13rem;
+    width: 93vw;
+    background-color: #ecf0f1;
+}
+
