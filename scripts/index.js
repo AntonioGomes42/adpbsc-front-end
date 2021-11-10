@@ -11,10 +11,6 @@ about.addEventListener('mouseover', onHover)
 home.addEventListener('mouseout', onMouseOut)
 gallery.addEventListener('mouseout', onMouseOut)
 about.addEventListener('mouseout', onMouseOut)
-//Click
-home.addEventListener('click', onClick)
-gallery.addEventListener('click', onClick)
-about.addEventListener('click', onClick)
 //Functions
 function onHover(event){
     removeActivatedFromButton();
@@ -81,22 +77,4 @@ function whoContainsActivatedClass(){
         return about;
     }
  return {id:"error"};
-}
-
-function onClick(event){
-    const button = event.target;
-    console.log(button);
-    const theElementOwnerOfActivatedClass = whoContainsActivatedClass();
-    removeOwnerOfActivatedClass(theElementOwnerOfActivatedClass);
-    addOwnerOfActivatedClass(button);
-}
-
-function addOwnerOfActivatedClass(event){
-    event.classList.add("activated");
-    event.classList.add("hover");
-    event.style.color = "#232B52FE";
-}
-
-function removeOwnerOfActivatedClass(ownerToRemove){
-    ownerToRemove.classList.remove("activated");
 }
