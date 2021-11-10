@@ -1,4 +1,5 @@
-# adpbsc-paginadeavisosv2
+# ADPBSC-Front-End
+
 
 Este é um projeto de página de avisos semanais, da igreja Assembléia de Deus em Santa Cecília.
 
